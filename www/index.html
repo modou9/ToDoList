@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ToDo List</title>
+	<link rel="stylesheet" href="lib/themes/todolist.min.css" />
+    <link rel="stylesheet" href="lib/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="lib/jquery.mobile.structure-1.4.5.min.css">
+	
+	<link rel="stylesheet" href="css/index.css">
+    <script src="lib/jquery.min.js"></script>
+	<script src="lib/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header">
+			<h1>ToDo List</h1>
+		</div>
+		<div role="main" class="ui-content">
+			<form>
+				<label for="task"></label>Ajouter une tâche</label>
+				<input type="text" id="task" placeholder="Nouvelle tâche">
+				<input type="button" value="Ajouter" onclick="ajouterTache()">
+				<input type="button" value="Réinitialiser" onclick="reinitialiser()">
+            </form>
+			<div data-role="header">
+                <h1>en cour</h1>
+            </div>
+			<ul id="taskList" data-role="listview" data-inset="true"></ul>
+
+				<!-- <h2>Tâches en cours</h2>-->
+                <!--<ul id="tachesActu"></ul>-->
+
+
+
+			<div data-role="header">
+                <h1>Terminer</h1>
+            </div>
+            <ul id="tacheFaites" data-role="listview" data-inset="true"></ul></ul>
+
+				<!--contenu de la page-->
+
+        	</div>
+
+        <div data-role="footer" data-position="fixed">
+			<h1>M2IA &copy; 2024</h1>
+	</div>
+</head>
+</body>
